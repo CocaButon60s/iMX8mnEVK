@@ -1,0 +1,12 @@
+services:
+  builder:
+    build:
+      context: .
+      args:
+        - GIT_USER=${GIT_USER}
+        - GIT_EMAIL=${GIT_EMAIL}
+    tty: true
+    user: user
+    volumes:
+      - ../sources:/home/user/sources
+      - ../build:/home/user/build
