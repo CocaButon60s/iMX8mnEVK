@@ -1,4 +1,1 @@
-build
 .env
-sources/*
-!sources/meta-customize
